@@ -1,0 +1,45 @@
+:root {
+    --lime-reen: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook-color: hsl(208, 92%, 53%);
+    --twitter--color: hsl(203, 89%, 53%);
+    --instagram-color: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --youTube-color: hsl(348, 97%, 39%);
+    --dark-toggle-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+    --light-toggle-color: hsl(230, 22%, 74%);
+
+    --dark-bg-blue: hsl(230, 17%, 14%);
+    --dark-pattern-blue: hsl(232, 19%, 15%);
+    --dark-bg-card-blue: hsl(228, 28%, 20%);
+    --dark-text-blue: hsl(228, 34%, 66%);
+    --dark-text-white: hsl(0, 0%, 100%);
+
+    --light-bg-white: hsl(0, 0%, 100%);
+    --light-pattern-blue: hsl(225, 100%, 98%);
+    --light-bg-card-grayish: hsl(227, 47%, 96%);
+    --light-text-grayish: hsl(228, 12%, 44%);
+    --light-text-blue:  hsl(230, 17%, 14%);
+
+    --font-size: 14px;
+    --font-family: 'Inter', sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
