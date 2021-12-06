@@ -21,14 +21,16 @@
     <main>
         <header>
             <div class="header__text">
-                <h1 class="title">Social Media Dashboard</h1>
-                <p class="followers">Total Followers: 23,004</p>
+                <h1 class="header__text__title">Social Media Dashboard</h1>
+                <p class="header__text__followers">Total Followers: 23,004</p>
             </div>
             <hr class="header__line">
             <div class="header__toggle">
                 <p class="toggle__text">Dark Mode</p>
-                <label for="toggle" class="toggle__label"></label>
-                <input type="checkbox" class="toggle__input" id="toggle">
+                <label for="toggle" class="toggle__label">
+                    <input type="checkbox" class="toggle__label__input" id="toggle" checked="true">
+                    <span class="toggle__label__circle"></span>
+                </label>
             </div>
         </header>
         <section class="rrss">
@@ -85,7 +87,7 @@
                 </div>
                 <div class="rrss__card__today">
                     <img src="images/icon-down.svg" alt="" class="today__arrow">
-                    <span class="today__text">144 Today</span>
+                    <span class="today__text text--red">144 Today</span>
                 </div>
             </article>
         </section>
