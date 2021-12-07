@@ -5,23 +5,26 @@
     --twitter-color: hsl(203, 89%, 53%);
     --instagram-color: linear-gradient(to right, rgba(253,196,104,1) 0%, rgba(223,73,150,1) 100%) 1;
     --youtube-color: hsl(348, 97%, 39%);
-    --dark-toggle-color: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
-    --light-toggle-color: hsl(230, 22%, 74%);
-
-    --dark-bg-blue: hsl(230, 17%, 14%);
-    --dark-pattern-blue: hsl(232, 19%, 15%);
-    --dark-bg-card-blue: hsl(228, 28%, 20%);
-    --dark-text-blue: hsl(228, 34%, 66%);
-    --dark-text-white: hsl(0, 0%, 100%);
-
-    --light-bg-white: hsl(0, 0%, 100%);
-    --light-pattern-blue: hsl(225, 100%, 98%);
-    --light-bg-card-grayish: hsl(227, 47%, 96%);
-    --light-text-grayish: hsl(228, 12%, 44%);
-    --light-text-blue:  hsl(230, 17%, 14%);
-
+    
     --font-size: 14px;
     --font-family: 'Inter', sans-serif;
+
+    --bg-main-color: hsl(225, 100%, 98%);
+    --bg-card-color: hsl(227, 47%, 96%);
+    --bg-body-color: hsl(0, 0%, 100%);
+    --text-grayish-color: hsl(228, 12%, 44%);
+    --text-blue-color: hsl(230, 17%, 14%);
+    --toggle-color: hsl(230, 22%, 74%);
+    --toggle-checked-color: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%);
+}
+
+[data-theme="dark"] {
+    --bg-main-color: hsl(232, 19%, 15%);
+    --bg-card-color: hsl(228, 28%, 20%);
+    --bg-body-color: hsl(230, 17%, 14%);
+    --text-grayish-color: hsl(228, 34%, 66%);
+    --text-blue-color: hsl(0, 0%, 100%);
+    --toggle-color: linear-gradient(135deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 50%);
 }
 
 html {
@@ -41,7 +44,8 @@ html {
 body {
     margin: 0;
     overflow-x: hidden;
-    color: var(--light-text-blue);
+    color: var(--text-blue-color);
+    background-color: var(--bg-body-color);
 }
 
 main {
@@ -55,7 +59,7 @@ main {
 .background {
     position: absolute;
     top: 0;
-    background-color: var(--light-pattern-blue);
+    background-color: var(--bg-main-color);
     width: 100%;
     height: 30%;
     z-index: 1;
@@ -68,20 +72,20 @@ header {
 
 .header__text__title {
     font-size: 1.6rem;
-    color: var(--light-text-blue);
+    color: var(--text-blue-color);
     margin-bottom: 0;
 }
 
 .header__text__followers {
     font-weight: 600;
-    color: var(--light-text-grayish);
+    color: var(--text-grayish-color);
     margin-top: .5rem;
     margin-bottom: 1.8rem;
 }
 
 .header__line {
     height: 1.3px;
-    background-color: var(--light-toggle-color);
+    background-color: rgb(179, 179, 179);
     border-width: 0;
 }
 
@@ -92,7 +96,7 @@ header {
 }
 
 .toggle__text {
-    color: var(--light-toggle-color);
+    color: var(--text-grayish-color);
     font-weight: 600;
 }
 
@@ -114,7 +118,7 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--light-toggle-color);
+    background-color: var(--toggle-color);
     transition: .3s;
     -webkit-transition: .3s;
     -moz-transition: .3s;
@@ -153,7 +157,7 @@ header {
 
 .toggle__label__input:checked + .toggle__label__circle, .toggle__label__circle:hover{
     background: rgb(55,143,230);
-    background: linear-gradient(90deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 100%); 
+    background: var(--toggle-checked-color); 
 }
 
 .rrss {
@@ -169,7 +173,7 @@ header {
     margin: 1rem;
     padding: 2rem;
     text-align: center;
-    background-color: var(--light-bg-card-grayish);
+    background-color: var(--bg-card-color);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -212,7 +216,7 @@ header {
     margin-left: 8px;
     font-size: .85rem;
     font-weight: 600;
-    color: var(--light-text-grayish);
+    color: var(--text-grayish-color);
 }
 
 .rrss__card__followers .followers__number {
@@ -225,7 +229,7 @@ header {
 .rrss__card__followers .followers__text {
     letter-spacing: .3rem;
     margin: 0;
-    color: var(--light-text-grayish);
+    color: var(--text-grayish-color);
 }
 
 .rrss__card__today {
@@ -249,7 +253,7 @@ header {
 
 .overview__title {
     font-size: 1.6rem;
-    color: var(--light-text-grayish);
+    color: var(--text-grayish-color);
     margin-top: 3rem;
 }
 
@@ -259,7 +263,7 @@ header {
     padding: 1rem 2rem;
     margin-bottom: 1.2rem;
     font-weight: 600;
-    background-color: var(--light-bg-card-grayish);
+    background-color: var(--bg-card-color);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -275,7 +279,7 @@ header {
 }
 
 .overview__card__title {
-    color: var(--light-text-grayish);
+    color: var(--text-grayish-color);
 }
 
 .overview__card__number {
