@@ -317,11 +317,12 @@ header {
 
     .rrss {
         flex-direction: row;
+        margin-top: 2rem;
     }
 
     .rrss__card {
         margin: 0;
-        margin-right: 1rem;
+        margin-right: 2rem;
         width: 100%;
     }
 
@@ -332,7 +333,8 @@ header {
     .overview {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 1rem;
+        gap: 2rem;
+        row-gap: .5rem;
     }
 
     .overview__card {
@@ -348,7 +350,7 @@ header {
 
 @media (min-width: 1440px) {
     main {
-        width: 70%;
+        width: 75%;
     }
 
     header {
