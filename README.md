@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution](https://your-solution-url.com)
+- [Solution](https://www.frontendmentor.io/solutions/social-media-dashboard-with-theme-switcher-bea8ojA4j)
 - [Live Site](https://ezevasari.github.io/social-media-dashboard-challenge/)
 
 ## My process
