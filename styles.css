@@ -11,6 +11,7 @@
 
     --bg-main-color: hsl(225, 100%, 98%);
     --bg-card-color: hsl(227, 47%, 96%);
+    --bg-card-hover-color: hsl(229, 18%, 88%);
     --bg-body-color: hsl(0, 0%, 100%);
     --text-grayish-color: hsl(228, 12%, 44%);
     --text-blue-color: hsl(230, 17%, 14%);
@@ -21,7 +22,8 @@
 [data-theme="dark"] {
     --bg-main-color: hsl(232, 19%, 15%);
     --bg-card-color: hsl(228, 28%, 20%);
-    --bg-body-color: hsl(230, 17%, 14%);
+    --bg-card-hover-color: hsl(229, 26%, 28%);
+    --bg-body-color: hsl(231, 16%, 15%);
     --text-grayish-color: hsl(228, 34%, 66%);
     --text-blue-color: hsl(0, 0%, 100%);
     --toggle-color: linear-gradient(135deg, rgba(55,143,230,1) 0%, rgba(62,218,130,1) 50%);
@@ -173,6 +175,7 @@ header {
     margin: 1rem;
     padding: 2rem;
     text-align: center;
+    cursor: pointer;
     background-color: var(--bg-card-color);
     border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -180,6 +183,10 @@ header {
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
 }
+
+    .rrss__card:hover, .overview__card:hover {
+        background-color: var(--bg-card-hover-color);
+    }
 
 .rrss__card--facebook {
     border-top: 4px solid var(--facebook-color);
@@ -263,6 +270,7 @@ header {
     padding: 1rem 2rem;
     margin-bottom: 1.2rem;
     font-weight: 600;
+    cursor: pointer;
     background-color: var(--bg-card-color);
     border-radius: 5px;
     -webkit-border-radius: 5px;
